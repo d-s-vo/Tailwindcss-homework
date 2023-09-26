@@ -7,8 +7,24 @@
         <link href="/dist/output.css" rel="stylesheet">
     </head>
     <body>
-      <div class=" ">
-        <header class='shadow-lg sticky z-[100] top-0 bg-white'>
+        <!-- Модальное окно с формой обратной связи -->
+        <div class="modal fixed w-full h-full overflow-hidden hidden bg-gray-100 bg-opacity-40 z-[110]">
+            <div class="max-w-xs top-10 mx-auto my-10 bg-white">
+                <div class="relative p-8 border-2 border-solid-black box-border">
+                    <div data-close></div>
+                    <form class="firstform" action="#">
+                        <div class="text-center text-base font-bold">Остались вопросы?</div>
+                        <input required placeholder="Имя" name="name" type="text" class="modal_input">
+                        <input required placeholder="E-mail" name="mail" type="text" class="modal_input">
+                        <input required placeholder="Телефон" name="phone" type="text" class="modal_input">
+                        <button class="mx-auto w-60 h-12 modal_btn"><sapn>Отправить</sapn></button> 
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Заголовок/Шапка сайта -->
+         <header class='shadow-lg sticky z-[100] top-0 bg-white'>
             <div class="mx-32 flex justify-between items-center h-20" >
                 <a>
                     <img class="shrink-0 hover:opacity-50 top-full" src="https://intechmed.net/files/front/logo.svg">
@@ -31,8 +47,10 @@
                 <a href="tel:+78123468837" class="font-bold text-xl text-sky-600 hover:text-black">+7 (812) 346-88-37</a>
                 <div class="h-full xl:px-10 flex items-center text-white font-bold bg-[#141C65] cursor-grab">Заказать звонок</div>
             </div>
-        </header>
-        <main class="grow">
+         </header>
+         <main class="grow">
+
+            <!-- Постер с рекламной информацией -->
             <div class="relative overflow-hidden bg-firm-gray max-w-[120rem] mx-auto">
                 <div class="absolute top-0 h-full -translate-1/4">
                     <img class="c-img !max-w-none" src="https://intechmed.net/files/index/index_bg.1690280264.jpg.1914x688c.avif">
@@ -45,11 +63,15 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Плашка с преимуществами организации -->
             <div class="relative mx-32 flex justify-center h-36 -mt-10">
                 <div class="bg-[#9A4841] grow flex items-center"><div class="text-lg font-medium text-white mx-auto">Опытные специалисты</div></div>
                 <div class="bg-[#383C3B] grow flex items-center"><div class="text-lg font-medium text-white mx-auto">Гарантия качества</div></div>
                 <div class="bg-[#0054A5] grow flex items-center"><div class="text-lg font-medium text-white mx-auto">Выгодные цены</div></div>
             </div>
+
+            <!-- Описание компетенций организации -->
             <div class="max-w-[120rem] mx-auto">
                 <div class="mx-32 mt-10">
                     <p>Компания ООО "Интехмед" специализируется на поставках оборудования от ведущих мировых производителей медицинской техники: 
@@ -74,6 +96,8 @@
                     </ul><br>
                     <p>Мы гарантируем решение задачи любой сложности!</p>
                 </div>
+
+                <!-- Еще немного выгодных предложений и форма обратной связи -->
                 <div class="">
                     <div class="flex mt-20 mx-32">
                         <div class="bg-[#F8F8F8] min-h-[29rem] px-[4.5rem] w-full flex flex-col justify-center">
@@ -106,16 +130,14 @@
                         <div class="bg-[#AE3443] text-white min-h-[29rem] px-[4.5rem] w-full flex flex-col justify-center">
                             <div class="text-3xl font-semibold mb-10 text-center">Остались вопросы?</div>
                             <div class="text-lg font-normal mb-10 text-center">Чтобы узнать больше о работе аппаратов или приобрести их, свяжитесь с нашим менеджером</div>
-                            <div class="bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 mx-32 rounded">Связаться</div>
-                        </div>
+                            <div class="contact bg-blue-500 hover:bg-blue-700 text-white text-center font-bold py-2 px-4 mx-32 rounded cursor-grab">Связаться</div>
+                        </div> 
                     </div>
                 </div>
-            </div>  
-
+            </div>    
         </main>
-    
-      
       </div>
+      <script src="./tW.js"></script>
     </body>
 
 </html>
