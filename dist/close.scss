@@ -1,0 +1,22 @@
+//<div data-close></div>
+
+[data-close] {
+    cursor: pointer;
+    position: absolute; 
+    top: 20px; 
+    right: 30px;
+  }
+  [data-close]:before, [data-close]:after {
+      content: ""; 
+      position: absolute; 
+      width: 15px; 
+      height: 4px; 
+      background: rgb(145, 100, 100);
+      
+    }
+  [data-close]:before {
+      transform: rotate(45deg);
+  } 
+  [data-close]:after {
+      transform: rotate(-45deg);
+  }

@@ -1,0 +1,14 @@
+//last commit 0cfb33b138526f362995d9a89a02a56c0ac56a40 28.09
+
+@import 'close';
+@import 'modal';
+@import 'divbtn';
+
+
+.contact_btn {
+   @include divbtn;
+}
+
+.modal_show {
+    display:block;
+}
